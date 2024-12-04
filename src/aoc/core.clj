@@ -23,3 +23,4 @@
       (let [left-list (sort (get trans-matrix 0))
             right-list (sort (get trans-matrix 1))]
         (reduce + (mapv #(abs (- %1 %2)) left-list right-list))))))
+
